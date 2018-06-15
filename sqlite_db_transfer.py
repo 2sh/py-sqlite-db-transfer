@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*
 
-from __future__ import print_function
 import sqlite3
 
 def transfer_db(db_from, db_to):
@@ -59,6 +58,7 @@ def store_db(database, path):
 	return f
 
 if __name__ == "__main__":
+	from __future__ import print_function
 	import sys
 	
 	help_text = '''Tranfer one SQLite database to another.
